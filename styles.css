@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  /*header*/
+  
+  header {
+    background-color: #070e16;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .logo img {
+    height: 60px;
+    margin-left: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff0000;
+  }
+  
+  /*hero*/
+  
+  .hero {
+    background-image: url("./Assest/hero-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color:white;
+    font-weight: 900;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 900;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #cc0000;
+  }
+  
+  /*about*/
+  
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  .about-content {
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .about-image {
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /*menu*/
+  
+  .menu {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .menu h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .menu-item {
+    max-width: 300px;
+    margin: 20px;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item p {
+    font-size: 16px;
+  }
+  
+  /*reservations*/
+  
+  .reservations {
+    background-color: #f7f7f7;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .reservation-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .reservation-form h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .reservation-form input,
+  .reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .reservation-form button {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .reservation-form button:hover {
+    background-color: #cc0000;
+  }
+  
+  /*testimonials*/
+  
+  .testimonials {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+  }
+  
+  .testimonial p {
+    font-size: 18px;
+  }
+  
+  .testimonial h4 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  /*gallery*/
+  
+  .gallery {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .gallery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-item {
+    max-width: 300px;
+    margin: 10px;
+  }
+  
+  .image-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /*contact*/
+  
+  .contact {
+    background-color: #f7f7f7;
+    padding: 50px;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .info-item {
+    text-align: center;
+  }
+  
+  .info-item i {
+    font-size: 24px;
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form {
+    text-align: left;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #cc0000;
+  }
+  
+  /*footer*/
+  
+  .footer {
+    background-color: #070e16;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo img {
+    height: 60px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #ff0000;
+  }
+  
+  .footer-social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: #ff0000;
+  }
+  
+  .footer-text {
+    margin-top: 20px;
+  }
+  
+  /*responsive*/
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 32px;
+    }
+  
+    .hero-content p {
+      font-size: 18px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .about,
+    .about-content,
+    .about-image,
+    .menu-items,
+    .contact-info {
+      display: block;
+    }
+  
+    .testimonial img {
+      float: none;
+      display: block;
+      margin: 0 auto 10px;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+    }
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+  
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+      justify-content: center;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    nav ul.active {
+      display: flex;
+      justify-content: center;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 25px;
+    }
+  }
+  
